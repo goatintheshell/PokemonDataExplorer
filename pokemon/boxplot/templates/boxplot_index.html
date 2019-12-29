@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block page_content %}
+    <div class="errors">{{ message }}</div>
+    <p>Choose Variable</p>
+    <form method="GET" action="/boxplot/boxplot">
+        <label>
+            <select name="var">
+              <option value="abilities">Abilities</option>
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="classification">Classification</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="japanese_name">Japanese Name</option>
+              <option value="name">Name</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <br><br>
+  <input type="submit">
+</form>
+
+{% endblock %}

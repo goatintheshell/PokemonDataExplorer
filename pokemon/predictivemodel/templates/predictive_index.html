@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% block page_content %}
+    <div class="errors">{{ message }}</div>
+    <p>Choose up to 5 Independent Variables</p>
+    <form method="GET" action="/predictivemodel/predictivemodel">
+        <label>
+            <select name="var1">
+                <option value="none">---</option>
+              <option value="abilities">Abilities</option>
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="classification">Classification</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="japanese_name">Japanese Name</option>
+              <option value="name">Name</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <label>
+            <select name="var2">
+                <option value="none">---</option>
+              <option value="abilities">Abilities</option>
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="classification">Classification</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="japanese_name">Japanese Name</option>
+              <option value="name">Name</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <label>
+            <select name="var3">
+                <option value="none">---</option>
+              <option value="abilities">Abilities</option>
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="classification">Classification</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="japanese_name">Japanese Name</option>
+              <option value="name">Name</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <label>
+            <select name="var4">
+                <option value="none">---</option>
+              <option value="abilities">Abilities</option>
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="classification">Classification</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="japanese_name">Japanese Name</option>
+              <option value="name">Name</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <label>
+            <select name="var5">
+                <option value="none">---</option>
+              <option value="abilities">Abilities</option>
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="classification">Classification</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="japanese_name">Japanese Name</option>
+              <option value="name">Name</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="type1">Type 1</option>
+              <option value="type2">Type 2</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <p>Choose 1 Dependent Variable</p>
+        <label>
+            <select name="vardep">
+              <option value="attack">Attack</option>
+              <option value="base_egg_steps">Base Egg Steps</option>
+              <option value="base_happiness">Base Happiness</option>
+              <option value="base_total">Base Total</option>
+              <option value="capture_rate">Capture Rate</option>
+              <option value="defense">Defense</option>
+              <option value="experience_growth">Experience Growth</option>
+              <option value="height_m">Height in Meters</option>
+              <option value="hp">Hit Points</option>
+              <option value="percentage_male">Percentage Male</option>
+              <option value="pokedex_number">Pokedex Number</option>
+              <option value="sp_attack">Special Attack</option>
+              <option value="sp_defense">Special Defense</option>
+              <option value="speed">Speed</option>
+              <option value="weight_kg">Weight in Kilograms</option>
+              <option value="generation">Generation</option>
+              <option value="is_legendary">Legendary</option>
+            </select>
+        </label>
+        <br><br>
+  <input type="submit">
+    <br><br>
+    <div class="result">{{ result }}</div>
+    <p>*The variables are assembled into a dataset.  The data is split into (70%) training and (30%) validation datasets.<br>
+        The predictive model is run (categorical variables are one hot encoded) and the R<sup>2</sup> score is calculated for the validation dataset.</p>
+</form>
+
+{% endblock %}

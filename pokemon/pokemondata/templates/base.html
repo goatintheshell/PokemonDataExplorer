@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/styles.css" %}" type="text/css"/>
+    <div class="navbar">
+  <a href="/pokemon">Pokemon Data Explorer</a>
+  <div class="dropdown">
+    <button class="dropbtn">Calculations
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/scatterplot">Scatterplot</a>
+      <a href="/boxplot">Box plot</a>
+      <a href="/predictivemodel">Linear Regression Model</a>
+    </div>
+  </div>
+</div>
+{% block page_content %}{% endblock %}
+
+

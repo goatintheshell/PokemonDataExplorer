@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block page_content %}
+<table>
+<tr>
+<td>Name</td>
+<td>Pokedex Number</td>
+<td>Japanese Name</td>
+<td>Abilities</td>
+<td>Base Egg Steps</td>
+<td>Base Happiness</td>
+<td>Base Total</td>
+<td>Capture Rate</td>
+<td>Classification</td>
+<td>Defense</td>
+<td>Experience Growth</td>
+<td>Height in Meters</td>
+<td>Weight in Kilograms</td>
+<td>HP</td>
+<td>Percentage Males</td>
+<td>Special Attack</td>
+<td>Special Defense</td>
+<td>Speed</td>
+<td>Type 1</td>
+<td>Type 2</td>
+<td>Generation</td>
+<td>Legendary</td>
+</tr>
+{% for mon in pokemon %}
+
+<tr>
+<td>{{ mon.name }}</td>
+<td>{{ mon.pokedex_number }}</td>
+<td>{{ mon.japanese_name }}</td>
+<td>{{ mon.attack }}</td>
+<td>{{ mon.base_egg_steps }}</td>
+<td>{{ mon.base_happiness }}</td>
+<td>{{ mon.base_total }}</td>
+<td>{{ mon.capture_rate }}</td>
+<td>{{ mon.classification }}</td>
+<td>{{ mon.defense }}</td>
+<td>{{ mon.experience_growth }}</td>
+<td>{{ mon.height_m }}</td>
+<td>{{ mon.weight_kg }}</td>
+<td>{{ mon.hp }}</td>
+<td>{{ mon.percentage_male }}</td>
+<td>{{ mon.sp_attack }}</td>
+<td>{{ mon.sp_defense }}</td>
+<td>{{ mon.speed }}</td>
+<td>{{ mon.type1 }}</td>
+<td>{{ mon.type2 }}</td>
+<td>{{ mon.generation }}</td>
+<td>{{ mon.is_legendary }}</td>
+</tr>
+
+{% endfor %}
+</table>
+{% endblock %}
